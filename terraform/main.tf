@@ -31,6 +31,10 @@ resource "azurerm_app_service" "app" {
   depends_on = [
     azurerm_app_service_plan.res-1,
   ]
+  site_config {
+    linux_fx_version = "NODE|16-lts"
+    app_command_line = "npx serve -s build/"
+  }
 }
 resource "azurerm_app_service_custom_hostname_binding" "res-22" {
   app_service_name    = "GithubActionsNodeReact"
