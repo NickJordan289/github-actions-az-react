@@ -1,6 +1,5 @@
 variable "BACKEND_KEY" {
   type     = string
-  nullable = false 
   sensitive = true
 }
 
