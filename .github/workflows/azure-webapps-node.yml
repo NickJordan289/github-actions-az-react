@@ -94,8 +94,9 @@ jobs:
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 0.14.8
-          tf_actions_subcommand: 'init -backend-config "access_key=${{ env.TF_VAR_BACKEND_KEY }}"'
+          tf_actions_subcommand: 'init'
           tf_actions_working_dir: "./terraform"
+          args: '-backend-config "access_key=${{ env.TF_VAR_BACKEND_KEY }}"'
 
       - name: 'Terraform Validate'
         uses: hashicorp/terraform-github-actions@master
