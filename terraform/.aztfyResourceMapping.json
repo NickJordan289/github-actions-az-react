@@ -1,0 +1,7 @@
+{
+	"/subscriptions/c490a576-4e4b-4831-82f9-f131843936bf/resourceGroups/GithubActionsNode": "azurerm_resource_group.res-23",
+	"/subscriptions/c490a576-4e4b-4831-82f9-f131843936bf/resourceGroups/GithubActionsNode/providers/Microsoft.Web/serverfarms/ASP-GithubActionsNode-99c8": "azurerm_app_service_plan.res-1",
+	"/subscriptions/c490a576-4e4b-4831-82f9-f131843936bf/resourceGroups/GithubActionsNode/providers/Microsoft.Web/sites/GithubActionsNodeReact": "azurerm_app_service.app",
+	"/subscriptions/c490a576-4e4b-4831-82f9-f131843936bf/resourceGroups/GithubActionsNode/providers/Microsoft.Web/sites/GithubActionsNodeReact/hostNameBindings/githubactionsnodereact.azurewebsites.net": "azurerm_app_service_custom_hostname_binding.res-22",
+	"/subscriptions/c490a576-4e4b-4831-82f9-f131843936bf/resourceGroups/GithubActionsNode/providers/microsoft.insights/components/GithubActionsNodeReact": "azurerm_application_insights.res-0"
+}
