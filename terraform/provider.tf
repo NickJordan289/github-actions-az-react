@@ -1,3 +1,9 @@
+variable "BACKEND_KEY" {
+  type     = string
+  nullable = false 
+  sensitive = true
+}
+
 terraform {
   # backend "local" {}
   backend "azurerm" {
@@ -5,8 +11,7 @@ terraform {
     storage_account_name = "terraformbackendghan"
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
-    access_key           = "h/j3hcncHPiw/vbrcrRLd3HGt0uG2jvvmp8jKIEHxtO22Kc8ywKHOyFV2YsCtkA9XJCszyOQJpdLzSGGWccxag=="
-
+    access_key           = var.BACKEND_KEY
   }
   required_providers {
     azurerm = {
